@@ -1,8 +1,5 @@
-'''
-bitcoin price history - 1 year
-'''
-import config as cfg
-import requests
+import config as cfg #uvoz config filea 
+import requests #uvoz biblioteka 
 from datetime import datetime
 import matplotlib.pyplot as plt
 import mplcursors
@@ -10,16 +7,16 @@ import mplcursors
 
 def price_history(id, name):
 
-    API_KEY = cfg.api['API_KEY_COINRANKING']
+    API_KEY = cfg.api['API_KEY_COINRANKING'] #dohvat api keya iz cfg 
     #url = "https://api.coinranking.com/v2/coin/Qwsogvtv82FCd/history?timePeriod=1y"
     
-    url = "https://api.coinranking.com/v2/coin/"+id+"/history?timePeriod=1y"
+    url = "https://api.coinranking.com/v2/coin/"+id+"/history?timePeriod=1y" # ubacivanje id-a u url proslijeđenog kao argument u funkciji
 
     headers = {
-            'x-access-token': API_KEY
+            'x-access-token': API_KEY #postavljanje api keya u headeru requesta
         }
 
-    response = requests.request("GET", url, headers=headers)
+    response = requests.request("GET", url, headers=headers) #request
 
     if response.status_code == 200:
         print('Success!')
