@@ -23,6 +23,6 @@ pip install -r requirements.txt
 
 6. Run.
 ```
-python <name.py>
+python main.py
 ```
 
