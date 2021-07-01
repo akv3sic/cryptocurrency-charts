@@ -24,7 +24,7 @@ def price_history(id, name):
         print('Not found.')
     else:
         print('Error ', response.status_code)
-
+    
     # extracting data
     response = response.json()
     prices = []

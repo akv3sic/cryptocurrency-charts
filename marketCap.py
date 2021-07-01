@@ -6,7 +6,7 @@ import numpy as np
 def marketCap(lista_cry):
     MC=[] #lista marketCapova
     imena=[] #lista imena kriptovaluta
-    print (lista_cry)
+    #print (lista_cry)
     for valuta in lista_cry:
         MC.append(float(valuta["marketCap"])/1000000000) #marketCap dijelim s milijardom radi ljepšeg izgleda dijagrama 
         imena.append(valuta["name"])

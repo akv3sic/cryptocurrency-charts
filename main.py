@@ -14,6 +14,8 @@ if odabir==1: #u slučaju odabira povijesti
 
     print ("Unesite ime valute za koju želite analizu(kod 3 slova npr BTC za BITCOIN)")
     valuta=input()
+    valuta=''.join(valuta.split())
+    valuta=valuta.upper()
     valute=[]
     valute.append(valuta) #iako je 1 stavka stavljam je u niz da bi mogao koristiti istu funkciju za spremanje podataka u obliku riječnika
 elif odabir==2:   #u slučaju odabira marketCapa
@@ -59,7 +61,7 @@ for valuta in valute:
 
 #poziv funkcija sa proslijeđenim argumentima 
 if odabir==1:
-    price_history(a["id"], a["name"])
+    price_history(odabrane_valute[0]["id"], odabrane_valute[0]["name"])
 elif odabir==2:
     marketCap(odabrane_valute)
 

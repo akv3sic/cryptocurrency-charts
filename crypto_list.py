@@ -31,7 +31,7 @@ def punjenje_popisa():
                 "marketCap": coin["marketCap"]            
         }
         popis.setdefault(coin["symbol"],new)
-    print(popis)
+   # print(popis)
     return popis
 
     
