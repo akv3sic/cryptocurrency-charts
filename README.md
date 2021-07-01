@@ -1,6 +1,8 @@
 # Cryptocurrency Charts
 Cryptocurrency API data visualizations with Matplolib.
 
+> School project made for Script languages at the Faculty of mechanical engineering, computing and electrical engineering, University of Mostar.
+
 ### Screenshots
 
 ![eth-last-1y](https://user-images.githubusercontent.com/57301167/124183391-6e0b3d00-dab8-11eb-8a6f-fa01216b19f8.png)
