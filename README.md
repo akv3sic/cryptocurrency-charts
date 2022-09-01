@@ -4,7 +4,7 @@
 
 Cryptocurrency API data visualizations with Matplolib.
 
-> School project made for Script languages at the Faculty of mechanical engineering, computing and electrical engineering, University of Mostar.
+> School project
 
 ### Screenshots
 
